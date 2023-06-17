@@ -26,7 +26,8 @@ public class FrmPrincipalMecanico extends javax.swing.JFrame {
         menuConfiguracion = new javax.swing.JMenu();
         submenuAdminClientes = new javax.swing.JMenuItem();
         submenuAdmVehiculos = new javax.swing.JMenuItem();
-        submenuAdmMecanicos = new javax.swing.JMenuItem();
+        submenuAdminObservacion = new javax.swing.JMenuItem();
+        submenuAdminRepuestos = new javax.swing.JMenuItem();
         submenuAdmReparaciones = new javax.swing.JMenuItem();
         menuReportes = new javax.swing.JMenu();
         submenuReportesFacturaCliente = new javax.swing.JMenuItem();
@@ -94,14 +95,21 @@ public class FrmPrincipalMecanico extends javax.swing.JFrame {
         });
         menuConfiguracion.add(submenuAdmVehiculos);
 
-        submenuAdmMecanicos.setText("Admin mecánicos");
-        submenuAdmMecanicos.setActionCommand("Admin mecanicos");
-        submenuAdmMecanicos.addActionListener(new java.awt.event.ActionListener() {
+        submenuAdminObservacion.setText("Admin Observacion");
+        submenuAdminObservacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                submenuAdmMecanicosActionPerformed(evt);
+                submenuAdminObservacionActionPerformed(evt);
             }
         });
-        menuConfiguracion.add(submenuAdmMecanicos);
+        menuConfiguracion.add(submenuAdminObservacion);
+
+        submenuAdminRepuestos.setText("Admin repuestos");
+        submenuAdminRepuestos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submenuAdminRepuestosActionPerformed(evt);
+            }
+        });
+        menuConfiguracion.add(submenuAdminRepuestos);
 
         submenuAdmReparaciones.setText("Admin reparaciones");
         submenuAdmReparaciones.addActionListener(new java.awt.event.ActionListener() {
@@ -171,28 +179,6 @@ public class FrmPrincipalMecanico extends javax.swing.JFrame {
         objFrmDiagLogin.setVisible(true);
     }//GEN-LAST:event_submenuAccesoActionPerformed
 
-    private void submenuAdminClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdminClientesActionPerformed
-        FrmDiagAdminClientes objFrmDiagAdmCliente = new FrmDiagAdminClientes(this, true);
-        objFrmDiagAdmCliente.setLocationRelativeTo(null);
-        objFrmDiagAdmCliente.setVisible(true);
-    }//GEN-LAST:event_submenuAdminClientesActionPerformed
-
-    private void submenuAdmVehiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdmVehiculosActionPerformed
-        FrmDiagAdminVehiculos objFrmDiagAdmVeh = new FrmDiagAdminVehiculos(this, true);
-        objFrmDiagAdmVeh.setLocationRelativeTo(null);
-        objFrmDiagAdmVeh.setVisible(true);
-    }//GEN-LAST:event_submenuAdmVehiculosActionPerformed
-
-    private void submenuAdmMecanicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdmMecanicosActionPerformed
-
-    }//GEN-LAST:event_submenuAdmMecanicosActionPerformed
-
-    private void submenuAdmReparacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdmReparacionesActionPerformed
-        FrmDiagAdminReparaciones objFrmDiagAdmReparacion = new FrmDiagAdminReparaciones(this, true);
-        objFrmDiagAdmReparacion.setLocationRelativeTo(null);
-        objFrmDiagAdmReparacion.setVisible(true);
-    }//GEN-LAST:event_submenuAdmReparacionesActionPerformed
-
     private void submenuReportesFacturaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuReportesFacturaClienteActionPerformed
         FrmDiagReportesFacturaCliente objFrmDiagRepFC = new FrmDiagReportesFacturaCliente(this, true);
         objFrmDiagRepFC.setLocationRelativeTo(null);
@@ -210,6 +196,36 @@ public class FrmPrincipalMecanico extends javax.swing.JFrame {
         objFrmDiagLR.setLocationRelativeTo(null);
         objFrmDiagLR.setVisible(true);
     }//GEN-LAST:event_submenuReportesLibretaRepuestosActionPerformed
+
+    private void submenuAdminClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdminClientesActionPerformed
+        FrmDiagAdminClientes objFrmDiagAdmCliente = new FrmDiagAdminClientes(this, true);
+        objFrmDiagAdmCliente.setLocationRelativeTo(null);
+        objFrmDiagAdmCliente.setVisible(true);
+    }//GEN-LAST:event_submenuAdminClientesActionPerformed
+
+    private void submenuAdmVehiculosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdmVehiculosActionPerformed
+        FrmDiagAdminVehiculos objFrmDiagAdmVeh = new FrmDiagAdminVehiculos(this, true);
+        objFrmDiagAdmVeh.setLocationRelativeTo(null);
+        objFrmDiagAdmVeh.setVisible(true);
+    }//GEN-LAST:event_submenuAdmVehiculosActionPerformed
+
+    private void submenuAdminObservacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdminObservacionActionPerformed
+        FrmDiagAdminObservaciones objFrmDiagObs = new FrmDiagAdminObservaciones(this, true);
+        objFrmDiagObs.setLocationRelativeTo(null);
+        objFrmDiagObs.setVisible(true);
+    }//GEN-LAST:event_submenuAdminObservacionActionPerformed
+
+    private void submenuAdminRepuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdminRepuestosActionPerformed
+        FrmDiagAdminRepuestos objFrmDiagAdmRepuesto = new FrmDiagAdminRepuestos(this, true);
+        objFrmDiagAdmRepuesto.setLocationRelativeTo(null);
+        objFrmDiagAdmRepuesto.setVisible(true);
+    }//GEN-LAST:event_submenuAdminRepuestosActionPerformed
+
+    private void submenuAdmReparacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submenuAdmReparacionesActionPerformed
+        FrmDiagAdminReparaciones objFrmDiagAdmReparacion = new FrmDiagAdminReparaciones(this, true);
+        objFrmDiagAdmReparacion.setLocationRelativeTo(null);
+        objFrmDiagAdmReparacion.setVisible(true);
+    }//GEN-LAST:event_submenuAdmReparacionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -259,10 +275,11 @@ public class FrmPrincipalMecanico extends javax.swing.JFrame {
     private javax.swing.JMenu menuReportes;
     private javax.swing.JMenuItem submenuAcceso;
     private javax.swing.JMenuItem submenuAcercaDe;
-    private javax.swing.JMenuItem submenuAdmMecanicos;
     private javax.swing.JMenuItem submenuAdmReparaciones;
     private javax.swing.JMenuItem submenuAdmVehiculos;
     private javax.swing.JMenuItem submenuAdminClientes;
+    private javax.swing.JMenuItem submenuAdminObservacion;
+    private javax.swing.JMenuItem submenuAdminRepuestos;
     private javax.swing.JMenuItem submenuReportesFacturaCliente;
     private javax.swing.JMenuItem submenuReportesLibretaRepuestos;
     private javax.swing.JMenuItem submenuSalir;

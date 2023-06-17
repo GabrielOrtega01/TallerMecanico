@@ -48,13 +48,20 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submenuAdmVehiculosActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="submenuAdmMecanicos">
+            <MenuItem class="javax.swing.JMenuItem" name="submenuAdminObservacion">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Admin mec&#xe1;nicos"/>
-                <Property name="actionCommand" type="java.lang.String" value="Admin mecanicos"/>
+                <Property name="text" type="java.lang.String" value="Admin Observacion"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submenuAdmMecanicosActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submenuAdminObservacionActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="submenuAdminRepuestos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Admin repuestos"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submenuAdminRepuestosActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="submenuAdmReparaciones">
